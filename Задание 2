@@ -1,0 +1,17 @@
+--1
+Создан файл .my.cnf
+[mysql]
+user=root
+password = ********
+
+--2
+CREATE SCHEMA `example` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_mysql500_ci ;
+CREATE TABLE users (
+id INT,
+name VARCHAR (255)
+)
+
+--3
+
+mysqldump example > example.sql
+example < example1.sql
